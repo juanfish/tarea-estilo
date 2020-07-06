@@ -1,111 +1,93 @@
-<div class="container rounded-lg bg-warning my-3 text-white p-2">
-    <h1>Presentacion de datos</h1>
-    <hr>
-
-    <form action="">
-        <div class="form-group">
-            <div class="row">
-                <div class="col-3">
-                    <label for="" class="">Nombre</label>
-                    <input type="text" name="" id="" class="form-control">
-                </div>
-                <div class="col">
-                    <label for="">Apellido</label>
-                    <input type="text" name="" id="" class="form-control" placeholder="Apellido">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-6">
-                    <label for="" class="">Nacionalidad</label>
-                    <input type="text" name="" id="" class="form-control" placeholder="nacionalidad">
-                </div>
-                <div class="col">
-                    <label for="">Direccion</label>
-                    <input type="text" name="" id="" class="form-control" placeholder="Direccion">
-                </div>
-            </div>
-        </div>
-    </form>
-
-    <div class="form-row align-items-center">
-        <div class="col-auto">
-            <button class="btn " style="background-color: green; color: white;">Aceptar</button>
-        </div>
-        <div class="col-auto">
-            <button class="btn btn-danger">Eliminar</button>
-        </div>        
-        <div class="col-auto">
-            <button class="btn btn-primary">Cancelar</button>
-        </div>        
-        <div class="col-auto">
-            <button class="btn" style="background-color: chartreuse;"> Cambiar fondo formulario</button>
-        </div>        
-    </div>
-   
-    <!-- <div class="form-group">
+<div class="row">
+  <div class="col-3 my-4" id="lista">
+    <app-lista-tareas></app-lista-tareas>
+  </div>
+  <div class="col-7">
+    <div class=" rounded-lg  my-3  p-2 presentacion-datos">
+      <h1>Presentacion de datos</h1>
       <hr>
-      <table class="table table-striped  table-hover ">
-        <thead class="thead-dark">
-          <tr>
-            <th>Nombre</th>
-            <th>Apellido</th>
-            <th>Id</th>
-            <th>Seleccion</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let item of resultado">
-            <td>{{item.nombre}}</td>
-            <td>{{item.apellido}}</td>
-            <td>{{item.id}}</td>
-            <td><input type="checkbox" name="selecciona"></td>
-          </tr>
-        </tbody>
-      </table>
-    </div> -->
 
-    <div class="row">
-        <div class="col">
-            <!-- <table class="table table-striped  table-hover ">
-        <thead class="thead-dark">
-          <tr>
-            <th>Nombre</th>
-            <th>Apellido</th>
-            <th>Col</th>
-            <th>Seleccion</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let item of resultado">
-            <td>{{item.nombre}}</td>
-            <td>{{item.apellido}}</td>
-            <td>{{item.id}}</td>
-            <td><input type="checkbox" name="selecciona"></td>
-          </tr>
-        </tbody>
-      </table> -->
+      <form action="">
+        <div class="form-group">
+          <div class="row">
+            <div class="col-3">
+              <label for="" class="">Nombre</label>
+              <input type="text" name="" id="" class="form-control">
+            </div>
+            <div class="col">
+              <label for="">Apellido</label>
+              <input type="text" name="" id="" class="form-control" placeholder="Apellido">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <label for="" class="">Nacionalidad</label>
+              <input type="text" name="" id="" class="form-control" placeholder="nacionalidad">
+            </div>
+            <div class="col">
+              <label for="">Direccion</label>
+              <input type="text" name="" id="" class="form-control" placeholder="Direccion">
+            </div>
+          </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <!-- <table class="table table-striped table-hover ">
-        <thead class="thead-dark">
-          <tr>
-            <th>Nombre</th>
-            <th>Apellido</th>
-            <th>Col</th>
-            <th>Seleccion</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let item of ejemplo">
-            <td>{{item.nombre}}</td>
-            <td>{{item.apellido}}</td>
-            <td>{{item.id}}</td>
-            <td><input type="checkbox" name="selecciona"></td>
-          </tr>
-        </tbody>
-      </table> -->
+      </form>
+
+      <div class="form-row align-items-center">
+        <div class="col-auto">
+          <button class="btn " style="background-color: green; color: white;">--1--</button>
         </div>
+        <div class="col-auto">
+          <button class="btn btn-danger">--2--</button>
+        </div>
+        <div class="col-auto">
+          <button class="btn btn-primary">--3--</button>
+        </div>
+        <div class="col-auto">
+          <button class="btn btn-warning">--5--</button>
+        </div>
+        <div class="col-auto">
+          <button class="btn" style="background-color: darkorange;">--6--</button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <hr>
+        <table class="table table-striped  table-hover ">
+          <thead class="thead-dark">
+            <tr>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Id</th>
+              <th>Seleccion</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of resultado">
+              <td>{{item.nombre}}</td>
+              <td>{{item.apellido}}</td>
+              <td>{{item.id}}</td>
+              <td><input type="checkbox" name="selecciona"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="row">
+        <div class="col">
+         
+          <div class="form-row align-items-center">
+            <div class="col-auto">
+              <button type="submit" class="btn btn-primary">Boton A</button>
+              
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-primary">Boton B</button>
+      
+            </div>
+          </div>
+        </div>
+      </div>      
     </div>
+  </div>
 </div>
+
