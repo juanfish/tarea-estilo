@@ -1,0 +1,7 @@
+    {
+        "urlDesa": "localhost:666",
+        "urlProd" : "localhost:7878",
+        "statusAmbiente" : "D",
+        "SERVER" : "EXCELLA",
+        "USERNAME": "ultrasec"
+    }
